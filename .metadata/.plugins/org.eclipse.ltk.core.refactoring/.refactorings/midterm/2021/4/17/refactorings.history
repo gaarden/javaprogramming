@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;midterm.Array3D.java&apos; to &apos;FriendTest.java&apos;&#x0D;&#x0A;- Original project: &apos;midterm&apos;&#x0D;&#x0A;- Original element: &apos;midterm.Array3D.java&apos;&#x0D;&#x0A;- Renamed element: &apos;midterm.FriendTest.java&apos;" description="Rename compilation unit &apos;Array3D.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;midterm{Array3D.java" name="FriendTest.java" references="false" stamp="1618907452180" version="1.0"/>
+</session>

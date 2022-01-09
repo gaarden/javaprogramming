@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.awt.ImageCapabilities"/>
+    <fullyQualifiedTypeName name="java.awt.Image"/>
+    <fullyQualifiedTypeName name="java.awt.Dimension"/>
+    <fullyQualifiedTypeName name="java.awt.Graphics"/>
+    <fullyQualifiedTypeName name="com.google.auth.oauth2.GoogleCredentials"/>
+    <fullyQualifiedTypeName name="com.google.api.client.util.Lists"/>
+    <fullyQualifiedTypeName name="com.google.cloud.storage.Storage"/>
+    <fullyQualifiedTypeName name="com.google.cloud.storage.StorageOptions"/>
+    <fullyQualifiedTypeName name="com.google.api.Page"/>
+    <fullyQualifiedTypeName name="javafx.application.Application"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.Main"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;AccessModifierTest6/src&apos;&#x0D;&#x0A;- Original project: &apos;AccessModifierTest2&apos;&#x0D;&#x0A;- Destination element: &apos;AccessModifierTest6/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     AccessModifierTest2/src/p&#x0D;&#x0A;     AccessModifierTest2/src/q" description="Copy packages" destination="=AccessModifierTest6/src" element1="/src&lt;p" element2="/src&lt;q" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1618281847261" version="1.0"/>
+</session>

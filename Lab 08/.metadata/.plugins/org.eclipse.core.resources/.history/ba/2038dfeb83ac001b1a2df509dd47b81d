@@ -1,0 +1,45 @@
+
+public class Test {
+	public static void main(String[] args)
+	{
+		try {
+			throw new ExceptionC();
+		}
+		
+		catch(Exception exception) {
+			
+		}
+	}
+}
+
+class Exception
+{
+	public void print()
+	{
+		System.out.println("Exception");
+	}
+}
+
+class ExceptionA extends Exception
+{
+	public void print()
+	{
+		System.out.println("ExceptionA");
+	}
+}
+
+class ExceptionB extends ExceptionA
+{
+	public void print()
+	{
+		System.out.println("ExceptionB");
+	}
+}
+
+class ExceptionC extends ExceptionB
+{
+	public void print()
+	{
+		System.out.println("ExceptionC");
+	}
+}

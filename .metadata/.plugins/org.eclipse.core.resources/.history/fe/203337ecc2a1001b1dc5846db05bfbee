@@ -1,0 +1,47 @@
+package midterm;
+
+import java.util.Scanner;
+import java.util.Arrays;
+import java.security.SecureRandom;
+
+public class PassArray2 {
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.println("3차원 배열의 sections, rows, cols : ");
+		int sections = input.nextInt();
+		int rows = input.nextInt();
+		int cols = input.nextInt();
+		input.close();
+		
+		int[][][] array = new int[sections][rows][cols];
+		
+		inputArray3D(array);
+		System.out.println("after creating random numbers");
+		printArray3D(array);
+		arraysort(array);
+		System.out.println("after sorting");
+		printArray3D(array);
+	}
+	
+	public static void inputArray3D()
+	{
+		SecureRandom randomNumbers = new SecureRandom();
+		
+		for (int i = 0; i<sections; i++)
+			for (int j = 0; j<rows; j++)
+				for (int k = 0; k<cols; k++)
+					array[i][j][k] = 1+randomNumbers.nextInt(10);
+	}
+	
+	public static void printArray3D()
+	{
+		
+	}
+	
+	public static void arraysort()
+	{
+		
+	}
+
+}

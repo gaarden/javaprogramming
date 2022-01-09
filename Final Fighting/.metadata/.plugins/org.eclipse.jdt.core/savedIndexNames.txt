@@ -1,0 +1,10 @@
+INDEX VERSION 1.131+C:\Users\LG\Desktop\KNU20211\JavaProgramming\Final Fighting\.metadata\.plugins\org.eclipse.jdt.core
+2953235305.index
+4032151470.index
+451143954.index
+585163922.index
+4267160747.index
+681076461.index
+3883950653.index
+1737238042.index
+2004623980.index

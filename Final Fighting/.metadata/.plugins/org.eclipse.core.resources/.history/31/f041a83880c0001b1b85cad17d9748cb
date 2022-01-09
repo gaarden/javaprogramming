@@ -1,0 +1,57 @@
+import java.io.IOException;
+import java.lang.IllegalStateException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
+import java.util.Collections;
+import java.util.List;
+import java.util.ArrayList;
+
+public class ReadSequentialFile 
+{
+	private static Scanner input;
+
+	public static void main(String[] args)
+	{
+		openFile();
+		readRecords();
+		closeFile();
+	}
+	
+	public static void openFile()
+	{
+		try
+		{
+			input = new Scanner(Paths.get("clients.txt"));
+		}
+		catch(IOException ioException)
+		{
+		}
+	}
+	
+	public static void readRecords()
+	{
+		System.out.println("before sorting");
+		System.out.printf("{");
+		while (input.hasNext())
+		{
+			System.out.printf("%d %s %s %.2f, ", input.nextInt(),
+					input.next(), input.next(), input.nextDouble());
+			List<Integer> account = new ArrayList<>();
+		}
+		System.out.printf("}%n%n");
+		//Collections.sort(account, );
+		System.out.println("after sorting");
+		System.out.printf("{");		
+	}
+	
+	public static void closeFile()
+	{
+		if (input != null)
+			input.close();
+	}
+	
+
+}

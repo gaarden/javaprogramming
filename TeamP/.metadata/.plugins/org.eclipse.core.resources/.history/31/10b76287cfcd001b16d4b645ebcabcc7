@@ -1,0 +1,109 @@
+package teamp;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Font;
+import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+
+import javax.swing.*;
+
+class ResultPanel extends JPanel {
+
+   public ResultPanel(MainFrame frame) {
+      System.out.println("ResultPanel");
+      setLayout(null);
+      setBackground(new Color(235, 140, 140));
+      frame.setVisible(true);
+      
+      //점수 출력
+      JLabel scorelabel= new JLabel(frame.getScore()+"점");
+      scorelabel.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 95));
+      scorelabel.setForeground(Color.BLACK);
+      scorelabel.setBounds(360, 165, 350, 296);
+      add(scorelabel);
+      
+
+      //점수판
+      ImageIcon result1 = new ImageIcon("src/img/result.png");
+
+      Image result1Image = result1.getImage();
+      Image resultBack = result1Image.getScaledInstance(600, 600, Image.SCALE_SMOOTH);
+      ImageIcon resultIcon = new ImageIcon(resultBack);
+
+      JButton resultP = new JButton(resultIcon);
+
+      resultP.setBounds(180, 10, 600, 600);
+      add(resultP);
+      resultP.setBorderPainted(false);
+      resultP.setFocusPainted(false);
+      resultP.setContentAreaFilled(false);
+      
+      //폭죽
+      ImageIcon firework1 = new ImageIcon("src/img/046.png");
+
+      Image firework1Image = firework1.getImage();
+      Image fire1 = firework1Image.getScaledInstance(200, 200, Image.SCALE_SMOOTH);
+      ImageIcon fireIcon1 = new ImageIcon(fire1);
+
+      JButton fireButton1 = new JButton(fireIcon1);
+
+      fireButton1.setBounds(80, 80, 200, 200);
+      add(fireButton1);
+      fireButton1.setBorderPainted(false);
+      fireButton1.setFocusPainted(false);
+      fireButton1.setContentAreaFilled(false);
+      
+      ImageIcon firework2 = new ImageIcon("src/img/047.png");
+
+      Image firework2Image = firework2.getImage();
+      Image fire2 = firework2Image.getScaledInstance(300, 300, Image.SCALE_SMOOTH);
+      ImageIcon fireIcon2 = new ImageIcon(fire2);
+
+      JButton fireButton2 = new JButton(fireIcon2);
+
+      fireButton2.setBounds(750, 200, 200, 200);
+      add(fireButton2);
+      fireButton2.setBorderPainted(false);
+      fireButton2.setFocusPainted(false);
+      fireButton2.setContentAreaFilled(false);
+      
+      ImageIcon firework3 = new ImageIcon("src/img/048.png");
+
+      Image firework3Image = firework3.getImage();
+      Image fire3 = firework3Image.getScaledInstance(280, 280, Image.SCALE_SMOOTH);
+      ImageIcon fireIcon3 = new ImageIcon(fire3);
+
+      JButton fireButton3 = new JButton(fireIcon3);
+
+      fireButton3.setBounds(75, 400, 150, 150);
+      add(fireButton3);
+      fireButton3.setBorderPainted(false);
+      fireButton3.setFocusPainted(false);
+      fireButton3.setContentAreaFilled(false);
+      
+      //임시로 만들어놓은 pass버튼
+      ImageIcon passButtonIcon=new ImageIcon("src/img/scoreboard.png");
+      JButton passButton=new JButton("src/img/p001.png",passButtonIcon);
+      
+      Image passButtonImageBefore=passButtonIcon.getImage();//540 290
+      Image passButtonImage1=passButtonImageBefore.getScaledInstance(200, 200, Image.SCALE_SMOOTH);
+      ImageIcon passButtonFinalIcon=new ImageIcon(passButtonImage1);
+      
+      JButton passButtonFinal =new JButton(passButtonFinalIcon);
+      
+      passButtonFinal.setBounds(770, 420, 200, 200);
+      passButtonFinal.setBorderPainted(false);
+      passButtonFinal.setFocusPainted(false);
+      passButtonFinal.setContentAreaFilled(false);
+      add(passButtonFinal);
+      passButtonFinal.addActionListener(new ActionListener() {
+          public void actionPerformed(ActionEvent e) {
+           
+          frame.scoreboard();        
+           
+             }}); 
+   }
+   
+}

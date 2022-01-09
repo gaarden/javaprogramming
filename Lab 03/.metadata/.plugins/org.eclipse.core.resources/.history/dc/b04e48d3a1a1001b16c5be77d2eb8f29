@@ -1,0 +1,39 @@
+import java.security.SecureRandom;
+import java.util.Scanner;
+
+public class random {
+	public static void main(String[] args)
+	{
+		SecureRandom randomNumbers = new SecureRandom();
+		Scanner input = new Scanner(System.in);
+		int num1 = 1+randomNumbers.nextInt(9);
+		int num2 = 1+randomNumbers.nextInt(9);
+		
+		String correct[] = {"Very good!", "Excellent!", "Nice work!", "Keep up the good work!"};
+		String wrong[] = {"No.", "Wrong.", "Don't give up.", "Keep trying."};
+		
+		int ans = 0;
+		
+		while(true)
+		{
+			System.out.printf("How much is %d times %d?\n", num1, num2);
+			ans = input.nextInt();
+			
+			if (ans == -1)
+				break;
+			
+			while (ans != num1*num2 && ans != -1)
+			{
+				System.out.print("Enter your answer (-1 to exit)");
+				int a = randomNumbers.nextInt(4);
+				
+				if (ans == -1)
+					break;
+				System.out.println(wrong[a]);
+			}
+			
+			
+		}
+	}
+
+}

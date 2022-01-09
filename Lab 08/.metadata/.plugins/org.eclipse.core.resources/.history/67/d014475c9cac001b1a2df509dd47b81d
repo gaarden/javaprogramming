@@ -1,0 +1,62 @@
+// 2020110975 문정원
+// 본인은 이 소스파일을 다른 사람의 소스를 복사하지 않고 직접 작성하였습니다.
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		try
+		{
+			throw new Exceptions();
+		}
+		
+		catch(ExceptionC exception)
+		{
+			System.out.printf("error %s%n",exception);
+		}
+		
+		catch(ExceptionB exception)
+		{
+			System.out.printf("error %s%n",exception);
+		}
+		
+		catch(ExceptionA exception)
+		{
+			System.out.printf("error %s%n",exception);
+		}
+		
+		catch(Exceptions exception)
+		{
+			System.out.printf("error %s%n",exception);
+		}
+	}
+}
+
+class Exceptions extends Exception{
+	public void print()
+	{
+		System.out.println("Exceptions");
+	}
+}
+
+class ExceptionA extends Exceptions{
+	@Override
+	public void print()
+	{
+		System.out.println("ExceptionA");
+	}
+}
+class ExceptionB extends ExceptionA{
+	@Override
+	public void print()
+	{
+		System.out.println("ExceptionB");
+	}
+}
+class ExceptionC extends ExceptionB{
+	@Override
+	public void print()
+	{
+		System.out.println("ExceptionC");
+	}
+}

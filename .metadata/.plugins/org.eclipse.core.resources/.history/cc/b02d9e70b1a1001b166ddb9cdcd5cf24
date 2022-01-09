@@ -1,0 +1,50 @@
+package midterm;
+
+public class MethodCheck {
+	public static void main(String[] args)
+	{
+		System.out.printf("Multiply 7 and 8 is %d\n", mult(7, 8));
+		System.out.printf("Multiply 7.5 and 8.5 is %f\n", mult(7.5, 8.5));
+		
+		Job info = new Job();
+		info.name = "garden";
+		info.age = 22;
+		info.job = "student";
+		
+		info.Data();
+	}
+	
+	public static int mult(int int1, int int2)
+	{
+		return int1*int2;
+	}
+	
+	public static double mult(double double1, double double2)
+	{
+		return double1*double2;
+	}
+	
+	
+}
+
+class People
+{
+	public String name;
+	public int age;
+	
+	public void Data()
+	{
+		System.out.println("이름: "+name+"나이: "+age);
+	}
+}
+
+class Job extends People
+{
+	public String job;
+	
+	public void Data()
+	{
+		super.Data();
+		System.out.println("직업: "+job);
+	}
+}

@@ -1,0 +1,12 @@
+import java.awt.Color;
+
+import javax.swing.JFrame;
+
+public class MoneyChange {
+	public static void main(String[] args) {
+		MoneyFrame m = new MoneyFrame();
+		m.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		m.setSize(250, 400);
+		m.setVisible(true);
+	}
+}

@@ -1,0 +1,25 @@
+// 2020110975 문정원
+// 본인은 이 소스파일을 다른 사람의 소스를 복사하지 않고 직접 작성하였습니다.
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class CheckedException {
+	/*
+	public static void main(String[] args){
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter a number : ");
+		int num = scanner.nextInt();
+		
+		System.out.println("데이터 = " + (char)num);
+	}
+	*/
+	public static void main(String[] args) throws IOException
+	{
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter a number : ");
+		int num = scanner.nextInt();
+		
+		System.out.println(num);
+	}
+}

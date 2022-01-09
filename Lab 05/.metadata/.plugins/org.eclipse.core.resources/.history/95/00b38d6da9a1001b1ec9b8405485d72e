@@ -1,0 +1,13 @@
+
+enum color {WHITE, BLACK, YELLOW, RED};
+
+public class Enum {
+	public static void main(String[] args)
+	{
+		color[] array = color.values();
+		
+		for (color name: array)
+			System.out.println(name);
+	}
+
+}
